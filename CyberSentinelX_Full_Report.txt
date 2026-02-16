@@ -1,0 +1,108 @@
+CyberSentinelX Full Software Report
+Date: 2026-02-16
+
+1. Executive Summary
+CyberSentinelX is an employee cybersecurity operations platform designed to reduce security risk created by human error. It combines prevention, awareness, detection, reporting, and response workflows in one system for both administrators and employees.
+
+2. Product Objective
+- Centralize organization-level security operations.
+- Improve user security awareness and day-to-day safe behavior.
+- Speed up incident reporting and resolution.
+- Provide clear role-based access for admin and employee users.
+
+3. Target Users
+- Admin / HR Security Managers:
+  monitor users, manage alerts, publish updates, and maintain operational controls.
+- Employees:
+  report issues, verify suspicious content, complete awareness activities, and receive guidance.
+
+4. Core Functional Modules
+4.1 Authentication and Access
+- Admin Login
+- Employee Login
+- OTP verification flow for secure identity checks
+
+4.2 Dashboard System
+- Admin Dashboard:
+  employee management, alert monitoring, backup tools, system checks, updates management.
+- Employee Dashboard:
+  personal alerts, issue reporting, phishing scanner access, quiz, updates, chatbot.
+
+4.3 Incident and Alert Management
+- Raise alerts with issue details.
+- Track alert status and updates.
+- Reply workflow between employee and admin for coordinated resolution.
+
+4.4 Phishing Scanner
+- Checks suspicious links or content patterns.
+- Supports safer click decisions and reduces exposure to phishing campaigns.
+
+4.5 Awareness and Training
+- Quiz module for security knowledge reinforcement.
+- Updates portal for announcements, awareness content, and communication.
+
+4.6 Chatbot Support
+- Built-in assistant for product usage and security-related questions.
+- Includes guidance for workflows, features, installation, and policy summary.
+
+4.7 Backup and System Operations
+- Backup module to support continuity and record retention.
+- System health/diagnostic areas for operational visibility.
+
+5. User Flow Overview
+Typical sequence:
+1) Role-based login
+2) Dashboard access
+3) Threat checking / reporting / training actions
+4) Alert communication and tracking
+5) Administrative response and closure
+
+6. Current Website Presentation Scope
+The project website currently includes:
+- Animated hero section
+- Feature overview
+- Workflow journey section
+- Screenshot gallery
+- Dedicated aligned slideshow
+- Demo videos (admin and employee)
+- About section
+- Privacy/Policy overview
+- Contact section
+- Theme switching (Light, Dark, Matrix)
+- Embedded support chatbot
+
+7. Installation and Packaging
+Packaging approach:
+- Build command: flutter build windows --release
+- Installer technology: Inno Setup
+- Installer script: installer/ShieldSense.iss
+- Output package target: dist/CyberSentinelX-Setup.exe
+
+8. Technology Summary
+- App layer: Flutter (Windows desktop target included)
+- Website layer: static HTML/CSS/JavaScript
+- Data/UI handling: local dynamic rendering for screenshots, chatbot, and transitions
+
+9. Strengths
+- Unified security workflow platform for multiple roles.
+- Practical modules for real daily employee usage.
+- Fast onboarding through built-in visual documentation and demos.
+- Integrated chatbot reduces support delay for common queries.
+- Clear installer workflow for Windows deployment.
+
+10. Risks and Improvement Opportunities
+- Chatbot is currently rule-based; no external LLM/backend context memory.
+- Reporting and analytics can be expanded for usage metrics and KPI tracking.
+- Policy pages can be split into dedicated legal pages (privacy.html, terms.html).
+- Additional accessibility improvements can be added (focus traps, reduced-motion support).
+- Enterprise audit logging and SIEM integration can strengthen governance.
+
+11. Recommended Next Roadmap
+1) Add persistent backend chatbot knowledge service with admin-editable FAQs.
+2) Add role-wise analytics dashboards (alerts raised/resolved, quiz performance).
+3) Expand phishing scanner with risk scoring and remediation suggestions.
+4) Add enterprise SSO and stronger policy-based access controls.
+5) Introduce automated backup verification and restore testing workflow.
+
+12. Conclusion
+CyberSentinelX is positioned as a practical cybersecurity operations platform with strong workflow coverage across authentication, awareness, scanning, incident reporting, and response. With enhanced analytics and deeper AI support, it can scale effectively for broader enterprise security operations.
